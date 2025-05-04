@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Microhabitats das Algas</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            padding: 0 10px;
+        }
+
+        header {
+            background-color: #009688;
+            color: white;
+            padding: 20px;
+            text-align: center;
+            border-radius: 0 0 10px 10px;
+        }
+
+        section {
+            margin-top: 20px;
+        }
+
+        label {
+            display: block;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+
+        select {
+            width: 100%;
+            padding: 10px;
+            font-size: 1em;
+            margin-bottom: 20px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        #algaInfo {
+            background-color: #e6ffe6; /* verde claro */
+            padding: 15px;
+            border-radius: 10px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+
+        iframe {
+            width: 100%;
+            height: 600px;
+            border: none;
+            border-radius: 10px;
+        }
+
+        footer {
+            text-align: center;
+            font-size: 0.9em;
+            color: #777;
+            margin: 40px 0 20px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Microhabitats das Algas</h1>
+    </header>
+    
+    <section>
+        <label for="alga">Escolha a alga:</label>
+        <select id="alga" onchange="loadAlga()">
+            <option value="">Selecione...</option>
+            <option value="aguaverde.html">Água Verde</option>
+            <option value="greendust.html">Green Dust</option>
+            <option value="filamentosadura.html">Filamentosa Dura</option>
+            <option value="filamentosamacia.html">Filamentosa Macia</option>
+            <option value="greenspot.html">Green Spot</option>
+            <option value="algamarrom.html">Alga Marrom</option>
+            <option value="cianobacterias.html">Cianobactérias</option>
+            <option value="algasvermelhas.html">Algas Vermelhas</option>
+        </select>
+        
+        <div id="algaInfo"></div>
+    </section>
+
+    <footer>
+        <p>Exploração dos microhabitats de algas em aquários. Informação técnica e aplicada.</p>
+        <p style="margin-top: 10px;">&copy; 2025 PLAM Aquarismo</p>
+    </footer>
+
+    <script>
+        function loadAlga() {
+            const alga = document.getElementById("alga").value;
+            const divInfo = document.getElementById("algaInfo");
+
+            if (alga) {
+                const iframe = document.createElement("iframe");
+                iframe.src = alga;
+                divInfo.innerHTML = "";
+                divInfo.appendChild(iframe);
+            } else {
+                divInfo.innerHTML = "";
+            }
+        }
+    </script>
+</body>
+</html>
