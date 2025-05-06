@@ -2,8 +2,8 @@
 const URLS_TO_CACHE = [
   "./index.html",
   "./manifest.json",
-  "./icon-192.png",
-  "./icon-512.png",
+  "./icon_180.png",
+  "./icon_512.png",
   "./aguaverde.html",
   "./greendust.html",
   "./filamentosadura.html",
