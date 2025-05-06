@@ -1,19 +1,38 @@
 {
   "name": "Microhabitats das Algas",
-  "short_name": "Algas",
-  "start_url": "./index.html",
+  "short_name": "Microhabitats",
+  "start_url": "index.html",
   "display": "standalone",
-  "background_color": "#e6ffe6",
+  "background_color": "#ffffff",
   "theme_color": "#009688",
-  "orientation": "portrait",
   "icons": [
     {
-      "src": "icon-192.png",
-      "sizes": "192x192",
+      "src": "icon_32x32.png",
+      "sizes": "32x32",
       "type": "image/png"
     },
     {
-      "src": "icon-512.png",
+      "src": "icon_64x64.png",
+      "sizes": "64x64",
+      "type": "image/png"
+    },
+    {
+      "src": "icon_128x128.png",
+      "sizes": "128x128",
+      "type": "image/png"
+    },
+    {
+      "src": "icon_180x180.png",
+      "sizes": "180x180",
+      "type": "image/png"
+    },
+    {
+      "src": "icon_250x250.png",
+      "sizes": "250x250",
+      "type": "image/png"
+    },
+    {
+      "src": "icon_512x512.png",
       "sizes": "512x512",
       "type": "image/png"
     }
