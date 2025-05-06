@@ -2,15 +2,24 @@
 <html lang="pt-br">
 <head>
     <link rel="manifest" href="manifest.json">
-<meta name="theme-color" content="#009688">
+    <meta name="theme-color" content="#009688">
 
-<script>
-    if ('serviceWorker' in navigator) {
-        navigator.serviceWorker.register('./service-worker.js')
-        .then(() => console.log('Service Worker registrado com sucesso.'))
-        .catch(error => console.error('Erro ao registrar o Service Worker:', error));
-    }
-</script>
+    <!-- ÍCONES ADICIONADOS -->
+    <link rel="icon" type="image/png" sizes="32x32" href="icon_32x32.png">
+    <link rel="icon" type="image/png" sizes="64x64" href="icon_64x64.png">
+    <link rel="icon" type="image/png" sizes="128x128" href="icon_128x128.png">
+    <link rel="icon" type="image/png" sizes="180x180" href="icon_180x180.png">
+    <link rel="icon" type="image/png" sizes="250x250" href="icon_250x250.png">
+    <link rel="icon" type="image/png" sizes="512x512" href="icon_512x512.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="icon_180x180.png">
+
+    <script>
+        if ('serviceWorker' in navigator) {
+            navigator.serviceWorker.register('./service-worker.js')
+            .then(() => console.log('Service Worker registrado com sucesso.'))
+            .catch(error => console.error('Erro ao registrar o Service Worker:', error));
+        }
+    </script>
 
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
